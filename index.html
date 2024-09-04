@@ -14,63 +14,66 @@
 <body>
   <div id="app">
     <main>
-      <h2>Crie seu convite</h2>
+      <div class="main-container">
+        <h2>Crie seu convite</h2>
 
-      <form method="post" enctype="multipart/form-data">
-        <fieldset class="about">
-          <img src="assets/icons/calendar.svg" alt="ícone de calendário">
-          <legend>Sobre o evento</legend>
+        <form method="post" enctype="multipart/form-data">
+          <fieldset class="about">
+            <img src="assets/icons/calendar.svg" alt="ícone de calendário">
+            <legend>Sobre o evento</legend>
 
-          <div class="input-wrapper">
-            <label for="event-name">Título</label>
-            <input type="text" id="event-name" placeholder="Nome do evento">
-          </div>
+            <div class="input-wrapper">
+              <label for="event-name">Título</label>
+              <input type="text" id="event-name" placeholder="Nome do evento">
+            </div>
 
-          <div class="input-wrapper">
-            <label for="event-start">Início</label>
-            <input type="date" lang="pt-br" id="event-start">,
-            <input type="time">
-          </div>
+            <div class="input-wrapper">
+              <label for="event-start">Início</label>
+              <input type="date" lang="pt-br" id="event-start">,
+              <input type="time">
+            </div>
 
-          <div class="input-wrapper">
-            <label for="event-end">Fim</label>
-            <input type="date" id="event-end">,
-            <input type="time">
-          </div>
+            <div class="input-wrapper">
+              <label for="event-end">Fim</label>
+              <input type="date" id="event-end">,
+              <input type="time">
+            </div>
 
-          <div class="input-wrapper">
-            <label for="event-type">Tipo</label>
-            <div class="radio-wrapper">
-              <div class="radio-inner">
-                <div class="radio-image presential-image"></div>
-                <input type="radio" name="event-type" value="presential" id="presential">
-                <label for="presential">Presencial</label>
-              </div>
+            <div class="input-wrapper">
+              <label for="event-type">Tipo</label>
+              <div class="radio-wrapper">
+                <div class="radio-inner">
+                  <div class="radio-image presential-image"></div>
+                  <input type="radio" name="event-type" value="presential" id="presential">
+                  <label for="presential">Presencial</label>
+                </div>
 
-              <div class="radio-inner">
-                <div class="radio-image online-image"></div>
-                <input type="radio" name="event-type" value="online" id="online">
-                <label for="online">Online</label>
+                <div class="radio-inner">
+                  <div class="radio-image online-image"></div>
+                  <input type="radio" name="event-type" value="online" id="online">
+                  <label for="online">Online</label>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="input-wrapper">
-            <label for="event-location">Local</label>
-            <input type="text" name="event-location" id="event-location">
-          </div>
+            <div class="input-wrapper">
+              <label for="event-location">Local</label>
+              <input type="text" name="event-location" id="event-location">
+            </div>
 
-          <div class="textarea-wrapper">
-            <label for="event-description">Descrição</label>
-            <textarea name="event-description" id="event-description" cols="30" rows="5" placeholder="Escreva sobre os detalhes do evento"></textarea>
-          </div>
-        </fieldset>
-      </form>
+            <div class="textarea-wrapper">
+              <label for="event-description">Descrição</label>
+              <textarea name="event-description" id="event-description" cols="30" rows="5" placeholder="Escreva sobre os detalhes do evento"></textarea>
+            </div>
+          </fieldset>
+        </form>
+      </div>
     </main>
     <aside>
-      <div class="logo"></div>
+      <img src="assets/Logo.svg" alt="icone do logo" class="logo">
       <h1>Festivite</h1>
       <p>Crie um convite digital para o seu evento</p>
+      <img src="assets/Background.png" alt="bacgkround" class="background">
     </aside>
   </div>
   
