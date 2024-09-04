@@ -38,7 +38,7 @@
 
   --input-base: #1C1F21;
   --input-stroke: #363B40;
-  --input-placehoolder: #869198;
+  --input-placeholder: #869198;
 
   --shape-background: #131516;
   --shape-body: #212427;
@@ -47,4 +47,29 @@
 
   --text-body: #C8CDD0;
   --text-heading: #F9F9F9;
+}
+
+body {
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-col-2 {
+  grid-template-columns: 1fr 1fr;
+}
+
+.gap-16 {
+  gap: 16px;
+}
+
+.gap-4 {
+  gap: 4px;
 }

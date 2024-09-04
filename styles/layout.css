@@ -18,6 +18,7 @@ main {
   grid-area: main;
   background-color: var(--shape-body);
   padding: 80px 130px;
+  border-radius: 12px;
 }
 
 aside {

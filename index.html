@@ -19,46 +19,50 @@
 
         <form method="post" enctype="multipart/form-data">
           <fieldset class="about">
-            <img src="assets/icons/calendar.svg" alt="ícone de calendário">
-            <legend>Sobre o evento</legend>
+            <legend>
+              <img src="assets/icons/calendar.svg" alt="ícone de calendário">
+              Sobre o evento
+            </legend>
 
             <div class="input-wrapper">
               <label for="event-name">Título</label>
               <input type="text" id="event-name" placeholder="Nome do evento">
             </div>
 
-            <div class="input-wrapper">
-              <label for="event-start">Início</label>
-              <input type="date" lang="pt-br" id="event-start">,
-              <input type="time">
-            </div>
+            <div class="grid grid-col-2 gap-16">
+              <div class="input-wrapper flex-1">
+                <label for="event-start">Início</label>
+                <input type="datetime-local" lang="pt-br" id="event-start">
+              </div>
 
-            <div class="input-wrapper">
-              <label for="event-end">Fim</label>
-              <input type="date" id="event-end">,
-              <input type="time">
-            </div>
-
-            <div class="input-wrapper">
-              <label for="event-type">Tipo</label>
-              <div class="radio-wrapper">
-                <div class="radio-inner">
-                  <div class="radio-image presential-image"></div>
-                  <input type="radio" name="event-type" value="presential" id="presential">
-                  <label for="presential">Presencial</label>
-                </div>
-
-                <div class="radio-inner">
-                  <div class="radio-image online-image"></div>
-                  <input type="radio" name="event-type" value="online" id="online">
-                  <label for="online">Online</label>
-                </div>
+              <div class="input-wrapper flex-1">
+                <label for="event-end">Fim</label>
+                <input type="datetime-local" lang="pt-br" id="event-end">
               </div>
             </div>
 
-            <div class="input-wrapper">
-              <label for="event-location">Local</label>
-              <input type="text" name="event-location" id="event-location">
+            <div class="grid grid-col-2 gap-16">
+              <div class="input-wrapper">
+                <label for="event-type">Tipo</label>
+                <div class="radio-wrapper grid grid-col-2 gap-4">
+                  <div class="radio-inner">
+                    <div class="radio-image presential-image"></div>
+                    <input type="radio" name="event-type" value="presential" id="presential">
+                    <label for="presential">Presencial</label>
+                  </div>
+
+                  <div class="radio-inner">
+                    <div class="radio-image online-image"></div>
+                    <input type="radio" name="event-type" value="online" id="online">
+                    <label for="online">Online</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-wrapper">
+                <label for="event-location">Local</label>
+                <input type="text" name="event-location" id="event-location">
+              </div>
             </div>
 
             <div class="textarea-wrapper">

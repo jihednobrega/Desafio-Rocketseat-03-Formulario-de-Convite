@@ -1,0 +1,13 @@
+main {
+  overflow-y: auto;
+
+  .main-container {
+    max-width: 560px;
+    margin-right: auto;
+  }
+
+  h2 {
+    font: var(--heading-md);
+    color: var(--text-heading);
+  }
+}
