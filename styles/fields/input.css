@@ -16,6 +16,20 @@ input, textarea {
 
 input {
   max-height: 48px;
+
+  &:invalid {
+    border: 1px solid var(--danger);
+  }
+
+  &[required] + .error {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  &:not(:focus):valid + .error {
+    display: none;
+  }
 }
 
 label {

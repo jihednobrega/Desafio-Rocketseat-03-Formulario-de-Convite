@@ -47,7 +47,7 @@
                 <div class="radio-wrapper grid grid-col-2 gap-4">
                   <div class="radio-inner">
                     <div class="radio-image presential-image"></div>
-                    <input type="radio" name="event-type" value="presential" id="presential">
+                    <input type="radio" name="event-type" value="presential" id="presential" checked>
                     <label for="presential">Presencial</label>
                   </div>
 
@@ -69,6 +69,184 @@
               <label for="event-description">Descrição</label>
               <textarea name="event-description" id="event-description" cols="30" rows="5" placeholder="Escreva sobre os detalhes do evento"></textarea>
             </div>
+          </fieldset>
+
+          <fieldset class="customization gap-28">
+            <legend>
+              <img src="assets/icons/paintbrush-vertical.svg" alt="ícone de pincel">
+              Personalização
+            </legend>
+
+            <div class="input-wrapper">
+              <label>Cor principal</label>
+              <div class="radio-wrapper">
+                <input type="radio" id="main-color" name="main-color" class="blue">
+                <input type="radio" id="main-color" name="main-color" class="navy">
+                <input type="radio" id="main-color" name="main-color" class="purple">
+                <input type="radio" id="main-color" name="main-color" class="fuschia">
+                <input type="radio" id="main-color" name="main-color" class="pink">
+                <input type="radio" id="main-color" name="main-color" class="red">
+                <input type="radio" id="main-color" name="main-color" class="orange">
+                <input type="radio" id="main-color" name="main-color" class="yellow">
+                <input type="radio" id="main-color" name="main-color" class="lime">
+                <input type="radio" id="main-color" name="main-color" class="green">
+                <input type="radio" id="main-color" name="main-color" class="cyan">
+              </div>
+            </div>
+
+            <div class="input-wrapper">
+              <label>Tema do evento</label>
+
+              <div class="radio-wrapper">
+                <div class="radio-inner">
+                  <input type="radio" name="event" id="birthday">
+                  <img src="assets/images/birthday.png" alt="imagem de festa de aniversário">
+                  <label for="birthday">Aniversário</label>
+                </div>
+                
+                <div class="radio-inner">
+                  <input type="radio" name="event" id="childrens">
+                  <img src="assets/images/childrens.png" alt="imagem de festa infantil">
+                  <label for="childrens">Infantil</label>
+                </div>
+                
+                <div class="radio-inner">
+                  <input type="radio" name="event" id="graduation">
+                  <img src="assets/images/graduation.png" alt="imagem de festa formatura">
+                  <label for="graduation">Formatura</label>
+                </div>
+                
+                <div class="radio-inner">
+                  <input type="radio" name="event" id="marriage">
+                  <img src="assets/images/marriage.png" alt="imagem de festa casamento">
+                  <label for="marriage">Casamento</label>
+                </div>
+                
+                <div class="radio-inner">
+                  <input type="radio" name="event" id="baby shower">
+                  <img src="assets/images/baby-shower.png" alt="imagem de festa chá de bebê">
+                  <label for="baby shower">Chá de bebê</label>
+                </div>
+                
+                <div class="radio-inner">
+                  <input type="radio" name="event" id="bridal shower">
+                  <img src="assets/images/bridal-shower.png" alt="imagem de festa chá de panela">
+                  <label for="bridal shower">Chá de panela</label>
+                </div>
+                
+                <div class="radio-inner">
+                  <input type="radio" name="event" id="carnival">
+                  <img src="assets/images/carnival.png" alt="imagem de festa de carnaval">
+                  <label for="carnival">Carnaval</label>
+                </div>
+                
+                <div class="radio-inner">
+                  <input type="radio" name="event" id="easter">
+                  <img src="assets/images/Easter.png" alt="imagem de festa de Páscoa">
+                  <label for="easter">Páscoa</label>
+                </div>
+                
+                <div class="radio-inner">
+                  <input type="radio" name="event" id="sao joao">
+                  <img src="assets/images/sao-joao.png" alt="imagem de festa de São João">
+                  <label for="sao joao">São João</label>
+                </div>
+                
+                <div class="radio-inner">
+                  <input type="radio" name="event" id="halloween">
+                  <img src="assets/images/halloween.png" alt="imagem de festa de halloween">
+                  <label for="halloween">Halloween</label>
+                </div>
+                
+                <div class="radio-inner">
+                  <input type="radio" name="event" id="christmas">
+                  <img src="assets/images/christmas.png" alt="imagem de festa de Natal">
+                  <label for="christmas">Natal</label>
+                </div>
+                
+                <div class="radio-inner">
+                  <input type="radio" name="event" id="other">
+                  <img src="assets/images/other.png" alt="imagem de festa de outro">
+                  <label for="other">Outro</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="grid grid-col-1-2 gap-16">
+              <div class="input-wrapper">
+                <label>Estilo</label>
+              
+                <div class="style-theme">
+                  <div class="toggle-switch">
+                    <input type="checkbox" id="style-toggle">
+                    <label for="style-toggle" class="slider">
+                      <span class="theme-label"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="droparea-wrapper">
+                <label>Foto de capa</label>
+
+                <div class="dropzone">
+                  <input type="file" id="invitation-cover" name="invitation-cover" accept="image/*">
+                  <label for="invitation-cover">
+                    <div>
+                      <img src="assets/icons/upload.svg" alt="ícone de upload">
+                      Selecionar
+                    </div>
+                    <span>Nenhum arquivo selecionado</span>
+                  </label>
+                  <!-- <div class="error">
+                    <img src="assets/icons/circle-alert.svg" alt="ícone de alerta vermelho">
+                    <span>Campo obrigatório</span>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+            
+
+            <!-- <div class="grid grid-col-2 gap-16">
+              <div class="input-wrapper flex-1">
+                <label for="event-start">Início</label>
+                <input type="datetime-local" lang="pt-br" id="event-start">
+              </div>
+
+              <div class="input-wrapper flex-1">
+                <label for="event-end">Fim</label>
+                <input type="datetime-local" lang="pt-br" id="event-end">
+              </div>
+            </div>
+
+            <div class="grid grid-col-2 gap-16">
+              <div class="input-wrapper">
+                <label for="event-type">Tipo</label>
+                <div class="radio-wrapper grid grid-col-2 gap-4">
+                  <div class="radio-inner">
+                    <div class="radio-image presential-image"></div>
+                    <input type="radio" name="event-type" value="presential" id="presential" checked>
+                    <label for="presential">Presencial</label>
+                  </div>
+
+                  <div class="radio-inner">
+                    <div class="radio-image online-image"></div>
+                    <input type="radio" name="event-type" value="online" id="online">
+                    <label for="online">Online</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-wrapper">
+                <label for="event-location">Local</label>
+                <input type="text" name="event-location" id="event-location">
+              </div>
+            </div>
+
+            <div class="textarea-wrapper">
+              <label for="event-description">Descrição</label>
+              <textarea name="event-description" id="event-description" cols="30" rows="5" placeholder="Escreva sobre os detalhes do evento"></textarea>
+            </div> -->
           </fieldset>
         </form>
       </div>
