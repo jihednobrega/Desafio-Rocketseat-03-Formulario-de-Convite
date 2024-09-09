@@ -198,56 +198,71 @@
                     </div>
                     <span>Nenhum arquivo selecionado</span>
                   </label>
-                  <!-- <div class="error">
-                    <img src="assets/icons/circle-alert.svg" alt="ícone de alerta vermelho">
-                    <span>Campo obrigatório</span>
-                  </div> -->
                 </div>
               </div>
             </div>
-            
+          </fieldset>
+          <fieldset class="contact">
+            <legend>
+              <img src="assets/icons/calendar.svg" alt="ícone de perfil">
+              Dados para contato
+            </legend>
 
-            <!-- <div class="grid grid-col-2 gap-16">
-              <div class="input-wrapper flex-1">
-                <label for="event-start">Início</label>
-                <input type="datetime-local" lang="pt-br" id="event-start">
-              </div>
-
-              <div class="input-wrapper flex-1">
-                <label for="event-end">Fim</label>
-                <input type="datetime-local" lang="pt-br" id="event-end">
+            <div class="input-wrapper">
+              <label for="contact-name">Nome</label>
+              <input type="text" id="contact-name" placeholder="Nome completo" required>
+              <div class="error">
+                <img src="assets/icons/circle-alert.svg" alt="ícone de alerta vermelho">
+                <span>Campo obrigatório</span>
               </div>
             </div>
 
             <div class="grid grid-col-2 gap-16">
-              <div class="input-wrapper">
-                <label for="event-type">Tipo</label>
-                <div class="radio-wrapper grid grid-col-2 gap-4">
-                  <div class="radio-inner">
-                    <div class="radio-image presential-image"></div>
-                    <input type="radio" name="event-type" value="presential" id="presential" checked>
-                    <label for="presential">Presencial</label>
-                  </div>
-
-                  <div class="radio-inner">
-                    <div class="radio-image online-image"></div>
-                    <input type="radio" name="event-type" value="online" id="online">
-                    <label for="online">Online</label>
-                  </div>
-                </div>
+              <div class="input-wrapper flex-1">
+                <label for="contact-mail">E-mail</label>
+                <input type="email" id="contact-mail" name="contact-mail" placeholder="exemplo@email.com">
               </div>
 
-              <div class="input-wrapper">
-                <label for="event-location">Local</label>
-                <input type="text" name="event-location" id="event-location">
+              <div class="input-wrapper flex-1">
+                <label for="contact-phone">Telefone</label>
+                <input type="tel" id="contact-phone" name="contact-phone" placeholder="(99) 99999-9999">
               </div>
             </div>
-
-            <div class="textarea-wrapper">
-              <label for="event-description">Descrição</label>
-              <textarea name="event-description" id="event-description" cols="30" rows="5" placeholder="Escreva sobre os detalhes do evento"></textarea>
-            </div> -->
           </fieldset>
+          <footer class="terms-wrapper">
+            <div class="terms">
+              <div class="checkbox-image"></div>
+              <input type="checkbox" name="terms" id="terms">
+
+              <label for="terms checkbox-wrapper">
+                Li e concordo com os <strong>Termos e Condições</strong> e com a <strong>Política de Privacidade</strong>
+              </label>
+            </div>
+
+            <div class="terms">
+              <div class="checkbox-image"></div>
+              <input type="checkbox" name="terms" id="terms">
+
+              <label for="terms checkbox-wrapper">
+                Aceito receber atualizações e promoções por e-mail
+              </label>
+            </div>
+
+            <div class="terms">
+              <div class="checkbox-image"></div>
+              <input type="checkbox" name="terms" id="terms">
+
+              <label for="terms checkbox-wrapper">
+                Aceito receber atualizações e promoções por SMS
+              </label>
+            </div>
+          </footer>
+          <div class="actions-wrapper">
+            <button class="btn-submit" type="button">
+              <img src="assets/icons/ticket.svg" alt="ícone de ticket">
+              Gerar convite
+            </button>
+          </div>
         </form>
       </div>
     </main>

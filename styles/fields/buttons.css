@@ -1,0 +1,30 @@
+.actions-wrapper {
+  margin-left: auto;
+}
+
+.btn-submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  border: none;
+  border-radius: 8px;
+  padding: 13px 20px;
+  background-color: var(--brand-dark);
+
+  color: var(--text-heading);
+  font: var(--body-md);
+  font-weight: 500;
+
+  cursor: pointer;
+
+  & img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  &:hover {
+    background-color: var(--brand-mid);
+  }
+}
