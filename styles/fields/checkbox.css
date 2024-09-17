@@ -23,7 +23,7 @@
       }
 
       &::before {
-        width: 60.25rem;
+        width: 4rem;
         height: 2rem;
         outline: 1px solid var(--input-stroke);
         border: 2px solid transparent;
@@ -32,8 +32,8 @@
       }
 
       &::after {
-        width: 20.25rem;
-        height: 20.25rem;
+        width: 1.5rem;
+        height: 1.5rem;
         left: 0.25rem;
         background-color: var(--input-stroke);
         transition: all 0.45s ease;

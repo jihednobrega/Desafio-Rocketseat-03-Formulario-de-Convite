@@ -17,7 +17,7 @@
   --heading-md: 600 1.75rem/normal var(--font-family-baloo-2);
   --heading-sm: 600 1.125rem/normal var(--font-family-baloo-2);
   --body-md: 400 1rem/normal var(--font-family-open-sans);
-  --body-sm: 400 10.25rem/normal var(--font-family-open-sans);
+  --body-sm: 400 0.875rem/normal var(--font-family-open-sans);
   --body-xs: 400 0.75rem/normal var(--font-family-open-sans);
 
   --brand-light: #59B2FF;

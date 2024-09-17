@@ -85,15 +85,3 @@
     }
   }
 }
-
-/* @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-  .dropzone {
-    & input {
-      right: 0.25rem;
-    }
-  }
-} */
-
-.edge-browser .dropzone input {
-  right: 0.25rem; /* Ajuste específico para Edge */
-}

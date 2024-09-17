@@ -121,7 +121,7 @@
 
   .radio-wrapper:has(.radio-inner) {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(130.25rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(8.375rem, 1fr));
     gap: 0.5rem;
 
     .radio-inner {
