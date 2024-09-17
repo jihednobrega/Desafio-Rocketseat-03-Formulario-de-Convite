@@ -13,12 +13,12 @@
   --font-family-baloo-2: "Baloo 2", sans-serif;
   --font-family-open-sans: "Open Sans", sans-serif;
 
-  --font-logo: 400 40px/normal var(--font-family-leckerli-one);
-  --heading-md: 600 28px/normal var(--font-family-baloo-2);
-  --heading-sm: 600 18px/normal var(--font-family-baloo-2);
-  --body-md: 400 16px/normal var(--font-family-open-sans);
-  --body-sm: 400 14px/normal var(--font-family-open-sans);
-  --body-xs: 400 12px/normal var(--font-family-open-sans);
+  --font-logo: 400 2.5rem/normal var(--font-family-leckerli-one);
+  --heading-md: 600 1.75rem/normal var(--font-family-baloo-2);
+  --heading-sm: 600 1.125rem/normal var(--font-family-baloo-2);
+  --body-md: 400 1rem/normal var(--font-family-open-sans);
+  --body-sm: 400 10.25rem/normal var(--font-family-open-sans);
+  --body-xs: 400 0.75rem/normal var(--font-family-open-sans);
 
   --brand-light: #59B2FF;
   --brand-mid: #3487CF;
@@ -49,8 +49,8 @@
   --text-heading: #F9F9F9;
 }
 
-body {
-  overflow: hidden;
+html {
+  scroll-behavior: smooth;
 }
 
 img {
@@ -71,15 +71,15 @@ img {
 }
 
 .gap-16 {
-  gap: 16px;
+  gap: 1rem;
 }
 
 .gap-4 {
-  gap: 4px;
+  gap: 0.25rem;
 }
 
 .gap-28 {
-  gap: 28px;
+  gap: 1.75rem;
 }
 
 .blue { 
@@ -124,4 +124,10 @@ img {
 
 .navy {
   background-color: var(--navy);
+}
+
+@media (width >= 80em) {
+  body {
+    overflow: hidden;
+  }
 }

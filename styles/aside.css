@@ -1,10 +1,14 @@
 aside {
   color: var(--text-heading);
   position: relative;
+  height: 36.6875rem;
+  margin-inline: auto;
   
-  .background {
+  & .background {
     width: 100%;
-    border-radius: 12px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.75rem;
 
     position: absolute;
     inset: 0;
@@ -12,20 +16,31 @@ aside {
     z-index: -1;
   }
   
-  .logo {
+  & .logo {
     width: auto;
-    height: 48px;
+    height: 3rem;
   }
 
-  h1 {
-    margin-top: 16px;
+  & h1 {
+    margin-top: 1rem;
     font: var(--font-logo);
     color: var(--pink);
   }
 
-  p {
-    margin-top: 4px;
+  & p {
+    margin-top: 0.25rem;
     font: var(--body-md);
     font-weight: 300;
+  }
+}
+
+@media (width >= 80em) {
+  aside {
+    height: initial;
+    margin-inline: initial;
+    
+    & .background {
+      height: initial;
+    }
   }
 }

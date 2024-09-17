@@ -1,11 +1,8 @@
 #app {
-  height: 100vh;
-
-  display: grid;
-  grid-template-columns: 400px 1fr;
-  grid-template-areas: 'aside main';
-  padding: 20px;
-  gap: 20px;
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 1.25rem;
+  gap: 1.25rem;
 
   overflow: hidden;
 }
@@ -15,13 +12,31 @@ body {
 }
 
 main {
-  grid-area: main;
   background-color: var(--shape-body);
-  padding: 80px 130px;
-  border-radius: 12px;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
 }
 
 aside {
-  grid-area: aside;
-  padding: 32px;
+  padding: 1.5rem;
+}
+
+@media (width >= 80em) {
+  #app {
+    height: 100vh;
+
+    display: grid;
+    grid-template-columns: 25rem 1fr;
+    grid-template-areas: 'aside main';
+  }
+
+  main {
+    grid-area: main;
+    padding: 5rem 8.125rem;
+  }
+  
+  aside {
+    grid-area: aside;
+    padding: 2rem;
+  }
 }

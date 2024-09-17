@@ -1,18 +1,18 @@
 .dropzone {
   position: relative;
   overflow: hidden;
-  height: 47px;
+  height: 2.9375rem;
 
-  input {
+  & input {
     width: 100%;
-    max-height: 40px;
+    max-height: 2.5rem;
     height: 100%;
     display: flex;
     align-items: center;
     padding: 0;
     outline: none;
     position: absolute;
-    top: 7px;
+    top: 0.6875rem;
     font: var(--body-md);
     color: var(--input-placeholder);
     background-color: transparent;
@@ -21,30 +21,30 @@
     cursor: pointer;
   }
 
-  input:focus {
+  & input:focus {
     border-color: transparent;
     outline-color: transparent;
     cursor: pointer;
   }
 
-  label {
+  & label {
     width: 100%;
     height: 100%;
 
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 0.75rem;
     margin: 0;
 
     cursor: pointer;
 
-    div {
-      width: 135px;
-      height: 40px;
+    & div {
+      width: 8.4375rem;
+      height: 2.5rem;
       margin: 0;
       border: none;
       background-color: var(--shape-button);
-      border-radius: 8px;
+      border-radius: 0.5rem;
 
       display: flex;
       align-items: center;
@@ -56,11 +56,11 @@
 
       z-index: 1;
 
-      img {
-        width: 16px;
-        height: 16px;
+      & img {
+        width: 1rem;
+        height: 1rem;
         
-        margin-right: 8px;
+        margin-right: 0.5rem;
       }
 
       &:hover {
@@ -68,7 +68,7 @@
       }
     }
 
-    span {
+    & span {
       display: none;
       cursor: pointer;
       font: var(--body-md);
@@ -77,3 +77,23 @@
   }
 }
 
+@-moz-document url-prefix() {
+  .dropzone {
+    & input {
+      top: 0.5625rem;
+      right: -3.125rem;
+    }
+  }
+}
+
+/* @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .dropzone {
+    & input {
+      right: 0.25rem;
+    }
+  }
+} */
+
+.edge-browser .dropzone input {
+  right: 0.25rem; /* Ajuste específico para Edge */
+}

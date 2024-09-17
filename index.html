@@ -29,7 +29,7 @@
               <input type="text" id="event-name" placeholder="Nome do evento">
             </div>
 
-            <div class="grid grid-col-2 gap-16">
+            <div class="gap-16">
               <div class="input-wrapper flex-1">
                 <label for="event-start">Início</label>
                 <input type="datetime-local" lang="pt-br" id="event-start">
@@ -41,7 +41,7 @@
               </div>
             </div>
 
-            <div class="grid grid-col-2 gap-16">
+            <div class="gap-16">
               <div class="input-wrapper">
                 <label for="event-type">Tipo</label>
                 <div class="radio-wrapper grid grid-col-2 gap-4">
@@ -160,7 +160,7 @@
                 
                 <div class="radio-inner">
                   <input type="radio" name="event" id="christmas">
-                  <img src="assets/images/christmas.png" alt="imagem de festa de Natal">
+                  <img src="assets/images/Christmas.png" alt="imagem de festa de Natal">
                   <label for="christmas">Natal</label>
                 </div>
                 
@@ -172,7 +172,7 @@
               </div>
             </div>
 
-            <div class="grid grid-col-1-2 gap-16">
+            <div class="gap-16 style-droparea">
               <div class="input-wrapper">
                 <label>Estilo</label>
               
@@ -217,13 +217,13 @@
               </div>
             </div>
 
-            <div class="grid grid-col-2 gap-16">
-              <div class="input-wrapper flex-1">
+            <div class="mail-phone gap-16">
+              <div class="input-wrapper">
                 <label for="contact-mail">E-mail</label>
                 <input type="email" id="contact-mail" name="contact-mail" placeholder="exemplo@email.com">
               </div>
 
-              <div class="input-wrapper flex-1">
+              <div class="input-wrapper">
                 <label for="contact-phone">Telefone</label>
                 <input type="tel" id="contact-phone" name="contact-phone" placeholder="(99) 99999-9999">
               </div>
@@ -275,4 +275,14 @@
   </div>
   
 </body>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var isEdge = navigator.userAgent.indexOf("Edg/") > -1;
+    if (isEdge) {
+      document.querySelector('.dropzone input').style.right = '0.25rem';
+    }
+  });
+</script>
+
 </html>
